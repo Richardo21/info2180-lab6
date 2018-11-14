@@ -2,9 +2,19 @@
 <html>
     <head>
         <title>Lab 6</title>
+        <link rel = "stylesheet" href = "style.css" type = "text/css"
         <script type="text/javascript" src="lab6.js"></script>
         <body>
-            <button onclick = "definition();">Search</button>
+            <div id = "header">Web Dictionary</div><br>
+                <div>
+                    <p>Lookup the definitions of a word. (e.g: ajax, html, bar, php, javascript or css) </p>
+                    <form>
+                        <input id = "search" type="text" name="Search"/>
+                        <input type="button" value="Search" onclick = "definiton();"/>
+                        <input type="button" id="btnAllSearch" value="Get All Definitions" onclick="definition(true)" >
+                    </form>
+                </div><br>
+                <div id = "result">Result</div>
         </body>
     </head>
 </html>
